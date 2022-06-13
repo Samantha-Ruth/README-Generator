@@ -1,0 +1,1 @@
+{"userName":"asdf","email":"asdf","projectName":"adsf","projectDescription":"asdf","license":"MIT","dependenciesCommand":"asdf","testsCommand":"adsf","toUse":"asdf","toContribute":"asdf"}
