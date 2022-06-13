@@ -1,8 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const generatePage = require('./utils/generateMarkdown.js');
-const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/page-template");
+const { writeFile } = require("./utils/generateReadMe");
 
 // TODO: Create an array of questions for user input
 // const questions = [];
@@ -121,16 +120,22 @@ const promptUser = () => {
 
 
 //TODO: Create a function to write README file
-    promptUser()
-        .then((data) => {
-            fs.writeFile("README.md", JSON.stringify(data), err => err ? console.error(err) : console.log("Answers Logged!"))
-        })
-        .then((data) => {
-            return generateMarkdown(data);
-            })
-        .then(pageMd => {
-            return fs.writeFile(pageMd);
-        } )
+promptUser()
+    // .then((data) => {
+    //     fs.writeFile("README.md", JSON.stringify(data), err => err ? console.error(err) : console.log("Answers Logged!"))
+    // })
+    .then(data => {
+        return generateMarkdown(data);
+    })
+    .then(pageMd => {
+        return writeFile(pageMd);
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse);
+    })
+    .catch(err => {
+        console.log(err);
+    });
 
 
 

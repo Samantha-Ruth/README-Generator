@@ -31,38 +31,39 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 module.exports = generateMarkdown => {
 
-  const { data } = generateMarkdown;
-  return `# ${data.title}
-    # ${data.projectName}
-    ![GitHub License](https://img.sheilds.io/github/license/:${data.userName}/:${data.projectName})
+  const { userName, ...other } = generateMarkdown;
+  return `
+  # ${other.projectName}
+![GitHub License](https://img.sheilds.io/github/license/:${userName}/:${other.projectName})
 
-    ## Description
-    ${data}.description}
+## Description
+${other.projectDescription}}
 
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)    
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    ## Installation
-    To install dependences, run the following command: ${data.dependenciesCommand}
+## Installation
+To install dependences, run the following command: ${other.dependenciesCommand}
 
-    ## Usage
-    ${data.toUse}
+## Usage
+${other.toUse}
 
-    ## License
-    ${data.license}
+## License
+${other.license}
 
-    ## Contributing
-    ${data.toContribute}
+## Contributing
+${other.toContribute}
 
-    ## Tests
-    To run tests, enter the following command: ${data.testsCommand}
+## Tests
+To run tests, enter the following command: ${other.testsCommand}
 
-    ## Questions 
-    If you have any questions about the repo, open an issue or contact me directly at ${data.email}.  You can find more of my work at (https://gitHub.com/${data.userName}).
-  `;
+## Questions 
+If you have any questions about the repo, open an issue or contact me directly at ${other.email}.  You can find more of my work at (https://gitHub.com/${userName}).
+`;
+
 }
