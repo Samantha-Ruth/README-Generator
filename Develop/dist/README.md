@@ -1,9 +1,8 @@
 
-  # Name of Project
-![GitHub License](https://img.shields.io/github/license/:Samantha-Ruth/:Name of Project)
+  # ;lkj
+![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Description
-project description}
-
+;kj}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)    
@@ -11,27 +10,15 @@ project description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-
-
 ## Installation
-To install dependences, run the following command: npm.install
-
-
+To install dependences, run the following command: ;klj
 ## Usage
-wathc out!  It's breakable!
-
-
+;klj
 ## License
-APACHE 2.0
-
-
+MIT
 ## Contributing
-anything helps.
-
-
+;kj
 ## Tests
-To run tests, enter the following command: npm test
-
-
+To run tests, enter the following command: ;kj
 ## Questions 
-If you have any questions about the repo, open an issue or contact me directly at sam.haberman@gmail.com.  You can find more of my work at (https://gitHub.com/Samantha-Ruth).
+If you have any questions about the repo, open an issue or contact me directly at sdf;lkja.  You can find more of my work at (https://gitHub.com/as;dfklja).

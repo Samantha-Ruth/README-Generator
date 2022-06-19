@@ -7,7 +7,9 @@
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
- function init() { }
+ function init() {
+    writeToFile ();
+  }
 
 // Function call to initialize app
 init();

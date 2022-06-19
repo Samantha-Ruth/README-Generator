@@ -34,10 +34,9 @@ module.exports = generateMarkdown => {
   const { userName, ...other } = generateMarkdown;
   return `
   # ${other.projectName}
-![GitHub License](https://img.shields.io/github/license/:${userName}/:${other.projectName})
+![GitHub License](https://img.shields.io/badge/License-${other.license}-blue.svg)
 ## Description
 ${other.projectDescription}}
-
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)    
@@ -45,28 +44,16 @@ ${other.projectDescription}}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-
-
 ## Installation
 To install dependences, run the following command: ${other.dependenciesCommand}
-
-
 ## Usage
 ${other.toUse}
-
-
 ## License
 ${other.license}
-
-
 ## Contributing
 ${other.toContribute}
-
-
 ## Tests
 To run tests, enter the following command: ${other.testsCommand}
-
-
 ## Questions 
 If you have any questions about the repo, open an issue or contact me directly at ${other.email}.  You can find more of my work at (https://gitHub.com/${userName}).
 `;
