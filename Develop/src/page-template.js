@@ -1,32 +1,40 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (license === None) {
-    return "";
+const renderLicenseBadge = licenseText => {
+  if (!licenseText) {
+    return '';
   }
-  return console.log("Badge Entered");
-  // need to create a new category (.badge?) and push into array.
+
+  return `
+![GitHub License](https://img.shields.io/badge/License-${licenseText}-blue.svg)
+  `;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (license === None) {
-    return "";
+const renderLicenseLink = licenseText => {
+  if (!licenseText) {
+    return '';
   }
-  return console.log("License Link");
-  //do all links start from the same place? ${license}@something.com?
+
+  return `
+* [License](#license)
+  `;
 };
 
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (license === None) {
-    return "";
+const renderLicenseSection = licenseText => {
+  if (!licenseText) {
+    return '';
   }
-  return console.log("license section of README");
-}
+
+  return `
+## License
+${licenseText}
+  `; 
+};
 
 // TODO: Create a function to generate markdown for README
 module.exports = generateMarkdown => {
@@ -34,13 +42,14 @@ module.exports = generateMarkdown => {
   const { userName, ...other } = generateMarkdown;
   return `
   # ${other.projectName}
-![GitHub License](https://img.shields.io/badge/License-${other.license}-blue.svg)
+  ${renderLicenseBadge(other.license)} 
+
 ## Description
-${other.projectDescription}}
+${other.projectDescription}
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)    
-* [License](#license)
+${renderLicenseLink(other.license)}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
@@ -48,8 +57,7 @@ ${other.projectDescription}}
 To install dependences, run the following command: ${other.dependenciesCommand}
 ## Usage
 ${other.toUse}
-## License
-${other.license}
+${renderLicenseSection(other.license)}
 ## Contributing
 ${other.toContribute}
 ## Tests

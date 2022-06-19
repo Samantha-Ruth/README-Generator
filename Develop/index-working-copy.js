@@ -58,10 +58,17 @@ const promptUser = () => {
         }
     },
         {
+        type: 'confirm',
+        name: 'confirmLicense',
+        message: "Does your project have a license?",
+        default: true
+        },
+        {
             type: 'list',
             name: 'license',
             message: "What kind of license does your project have?",
-            choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"]
+            choices: ["MIT", "APACHE_2.0", "GPL_3.0", "BSD_3"],
+            when: ({ confirmLicense }) => confirmLicense
         },
         {
             type: 'input',
@@ -121,6 +128,9 @@ const promptUser = () => {
 
 //TODO: Create a function to write README file
     promptUser()
+        // .then(data => {
+        //     console.log(data);
+        // })
         .then(data => {
             return generateMarkdown(data);
             })
