@@ -65,5 +65,4 @@ To run tests, enter the following command: ${other.testsCommand}
 ## Questions 
 If you have any questions about the repo, open an issue or contact me directly at ${other.email}.  You can find more of my work at (https://gitHub.com/${userName}).
 `;
-
-}
+};

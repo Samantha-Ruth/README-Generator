@@ -1,9 +1,9 @@
 
-  # a;sldkjf
+  # Taskinator
    
 
 ## Description
-;alskdjf
+amazing
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)    
@@ -12,13 +12,13 @@
 * [Tests](#tests)
 * [Questions](#questions)
 ## Installation
-To install dependences, run the following command: a;slkdjf
+To install dependences, run the following command: npm
 ## Usage
-a;slkdjf
+so many things
 
 ## Contributing
-as;ldkfj
+unclear
 ## Tests
-To run tests, enter the following command: a;skldjf
+To run tests, enter the following command: jest test
 ## Questions 
-If you have any questions about the repo, open an issue or contact me directly at a;sldkfj.  You can find more of my work at (https://gitHub.com/a;lskdfj).
+If you have any questions about the repo, open an issue or contact me directly at sam.haberman@gmail.com.  You can find more of my work at (https://gitHub.com/Samantha-Ruth).
