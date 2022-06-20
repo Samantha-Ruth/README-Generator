@@ -23,10 +23,11 @@ The user will receive a series of prompts, asking for github username, email, th
 
 When the user is finished entering their information, a ReadMe.md file is created with the project name on top, description, and a Table of Contents.  The Table of Contents includes Installation, Usage, License, Contributing, Tests, and Questions.  When the user clicks on an item in the Table Of Contents, they are brought to that section in the ReadMe file.  If the user entered a license, a badge with the user's license will appear at the top of the page, and information regarding the license type will appear in the Table of Contents and as an individual section in the readMe. If the user did not use a license for their project, no badge will appear and there will be no license section in the document or in the Table of Contents. 
 
-
-![App with Country displayed](https://user-images.githubusercontent.com/64170123/171307462-5df3cd3d-3039-49b6-8940-c78743756b16.jpg)
+![ReadMe-Generator](https://user-images.githubusercontent.com/64170123/174509020-317d8dd2-ee00-4488-865a-cb5cd6ebbf21.jpg)
 
 ## Links
+
+Link to video of project: https://drive.google.com/file/d/1FXDS7nnId151ynoSaCaO-GIDmZ_eQtU0/view
 
 The link to the project is here: https://samantha-ruth.github.io/README-Generator (which will show you this page)
 
@@ -35,11 +36,4 @@ The url of the Git repository is here: https://github.com/Samantha-Ruth/README-G
 ## Questions
 
 If you have any questions about the repo, open an issue or you can find more of my work at (https://gitHub.com/Samantha-Ruth).
-
- 
-
-
-
-
-
 
