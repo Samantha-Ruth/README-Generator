@@ -25,6 +25,8 @@ When the user is finished entering their information, a ReadMe.md file is create
 
 ![ReadMe-Generator](https://user-images.githubusercontent.com/64170123/174509020-317d8dd2-ee00-4488-865a-cb5cd6ebbf21.jpg)
 
+![ReadMe-Generator2](https://user-images.githubusercontent.com/64170123/174509169-68b8ca1b-8867-43d4-9b86-e2e31f32a476.jpg)
+
 ## Links
 
 Link to video of project: https://drive.google.com/file/d/1FXDS7nnId151ynoSaCaO-GIDmZ_eQtU0/view
